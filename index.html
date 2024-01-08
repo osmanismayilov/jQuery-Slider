@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS DOM</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="uploadArea">
+          <i class="fa-solid fa-cloud-arrow-up" id="upload"></i>
+          <input type="file" multiple style="display: none" />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <button class="btn btn-danger mt-2 d-none" id="removeAll">
+          Remove All
+        </button>
+        <table class="table d-none mt-3">
+          <thead>
+            <tr>
+              <th scope="col">Image</th>
+              <th scope="col">Name</th>
+              <th scope="col">Size</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Files added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/80bc77638c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
